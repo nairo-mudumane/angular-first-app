@@ -1,0 +1,18 @@
+<div>
+  <p *ngIf="data; else notShowData">Showing data</p>
+  <ng-template #notShowData>
+    <p>not showing data</p>
+  </ng-template>
+
+  <p *ngIf="mouseHover;else mouseOut">Mouse is hover the button</p>
+  <ng-template #mouseOut>
+    <p>Mouse is not hover the button</p>
+  </ng-template>
+
+  <h2>Count: {{count}}</h2>
+
+  <button class="btn" (click)="toggleShowData()" (click)="increment()" (mouseenter)="toggleMouseHover()"
+    (mouseout)="toggleMouseHover()">{{count}}</button>
+
+
+</div>
