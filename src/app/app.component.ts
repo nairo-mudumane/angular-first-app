@@ -3,8 +3,12 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'my-app';
+  public userName: string = 'Nairo Mudumane';
+  public userData = {
+    role: 'admin',
+    active: true,
+  };
 }
