@@ -1,0 +1,8 @@
+<div class="lesson" *ngIf="isShow">
+  <div>isShow: {{ isShow }}</div>
+  <p *ngIf="name === 'Nairo'; else nameNotFound">Name: {{ name }}</p>
+
+  <ng-template #nameNotFound>
+    <p>Name no found</p>
+  </ng-template>
+</div>
